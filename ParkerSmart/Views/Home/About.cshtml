@@ -1,7 +1,31 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<h2>@ViewBag.Title.</h2>
 
-<p>Use this area to provide additional information.</p>
+<p>This website is mostly used as a single point of contact and reference.</p>
+
+<div class="row">
+	<div class="col-md-1">
+		<a class="btn btn-default btn-lg" href="https://www.asp.net/" target="_blank">
+			<span class="glyphicon glyphicon-link" aria-hidden="true" />
+		</a>
+	</div>
+	<div class="col-md-4">Some good reference on ASP .Net and MVC.</div>
+</div>
+
+<div class="row-divider"> </div>
+
+<div class="row">
+	<div class="col-md-1">
+		<a class="btn btn-default btn-lg" href="http://getbootstrap.com" target="_blank">
+			<span class="glyphicon glyphicon-link" aria-hidden="true" />
+		</a>
+	</div>
+	<div class="col-md-4">Here's where you can get all things Bootstrap.</div>
+</div>
+
+<div class="row-divider"> </div>
+
+<div class="row">
+	<div class="col-md-4">
+		@Html.ActionLink("Site Versions", "Versions", "Home", htmlAttributes: new { @class = "btn btn-default" })
+	</div>
+</div>

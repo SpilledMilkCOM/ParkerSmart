@@ -1,30 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace ParkerSmart.Controllers
 {
 	public class HomeController : Controller
 	{
-		public ActionResult Index()
-		{
-			return View();
-		}
-
 		public ActionResult About()
 		{
-			ViewBag.Message = "Your application description page.";
+			Title = nameof(About);
 
 			return View();
 		}
 
 		public ActionResult Contact()
 		{
-			ViewBag.Message = "Your contact page.";
+			Title = nameof(Contact);
 
 			return View();
+		}
+
+		public ActionResult Index()
+		{
+			return View();
+		}
+
+		public ActionResult Versions()
+		{
+			Title = nameof(Versions);
+
+			return View();
+		}
+
+		//----==== PRIVATE ====--------------------------------------------------------------------
+
+		private string Title
+		{
+			get { return ViewBag.Title; }
+			set { ViewBag.Title = value; }
 		}
 	}
 }
