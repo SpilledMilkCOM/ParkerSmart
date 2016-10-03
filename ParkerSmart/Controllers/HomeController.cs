@@ -30,6 +30,13 @@ namespace ParkerSmart.Controllers
 			return View();
 		}
 
+		public ActionResult Work()
+		{
+			Title = nameof(Work);
+
+			return View();
+		}
+
 		//----==== PRIVATE ====--------------------------------------------------------------------
 
 		private string Title
