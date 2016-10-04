@@ -2,10 +2,23 @@
 
 <p>This website is mostly used as a single point of contact and reference.</p>
 
+<div class="row-divider"> </div>
+
+<div class="row">
+	<div class="col-md-1">
+		<a class="btn btn-default btn-lg" href="https://www.visualstudio.com/" target="_blank">
+			<img width="40" src="~/Images/visual_studio_2012_logo-150x150.png" />
+		</a>
+	</div>
+	<div class="col-md-4">Visual Studio - Programming environment (C#, Razor, MVC, Javascript, HTML, Deploy)</div>
+</div>
+
+<div class="row-divider"> </div>
+
 <div class="row">
 	<div class="col-md-1">
 		<a class="btn btn-default btn-lg" href="https://www.asp.net/" target="_blank">
-			<img width="40" src="~/Images/logo_aspmvc345.png" />
+			<img width="40" src="~/Images/aspmvc345-logo.png" />
 		</a>
 	</div>
 	<div class="col-md-4">Some good reference on ASP .Net and MVC.</div>
@@ -16,18 +29,10 @@
 <div class="row">
 	<div class="col-md-1">
 		<a class="btn btn-default btn-lg" href="http://getbootstrap.com" target="_blank">
-			<img width="40" src="~/Images/logo-bootstrap.png" />
+			<img width="40" src="~/Images/bootstrap-logo.png" />
 		</a>
 	</div>
 	<div class="col-md-4">Here's where you can get all things Bootstrap.</div>
-</div>
-
-<div class="row-divider"> </div>
-
-<div class="row">
-	<div class="col-md-4">
-		@Html.ActionLink("Site Versions", "Versions", "Home", htmlAttributes: new { @class = "btn btn-default" })
-	</div>
 </div>
 
 <div class="row-divider"> </div>
@@ -39,4 +44,12 @@
 		</a>
 	</div>
 	<div class="col-md-4">This site's code lives on GitHub.</div>
+</div>
+
+<div class="row-divider"> </div>
+
+<div class="row">
+	<div class="col-md-4">
+		@Html.ActionLink("Site Versions", "Versions", "Home", htmlAttributes: new { @class = "btn btn-default" })
+	</div>
 </div>

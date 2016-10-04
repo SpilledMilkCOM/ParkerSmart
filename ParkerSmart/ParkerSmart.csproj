@@ -140,12 +140,13 @@
     <Content Include="Images\GitHub-Mark-32px.png" />
     <Content Include="Images\Instagram-Logo.png" />
     <Content Include="Images\LinkedIn_logo_initials-66x66.png" />
-    <Content Include="Images\logo-bootstrap.png" />
-    <Content Include="Images\logo_aspmvc345.png" />
+    <Content Include="Images\bootstrap-logo.png" />
+    <Content Include="Images\aspmvc345-logo.png" />
     <Content Include="Images\NCM-Logo-Vert.png" />
     <Content Include="Images\playstation-96.png" />
     <Content Include="Images\Spilled Milk on Black Mini.png" />
     <Content Include="Images\Twitter-Logo.png" />
+    <Content Include="Images\visual_studio_2012_logo-150x150.png" />
     <Content Include="Images\windows_store_icon__transparent_blue___homemade__by_bannax1994-d8enq8q.png" />
     <Content Include="Images\wordpress-logo-32-blue.png" />
     <Content Include="Images\xbox-logo.png" />
