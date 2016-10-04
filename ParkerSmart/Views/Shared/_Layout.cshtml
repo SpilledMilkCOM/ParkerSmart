@@ -1,4 +1,5 @@
 ﻿@using ParkerSmart.Models
+@using ParkerSmart.Utilities
 
 <!DOCTYPE html>
 <html>
@@ -45,7 +46,7 @@
 		<footer>
 			<div class="row">
 				<div class="col-sm-6">
-					<p>&copy; @DateTime.Now.Year - Parker Smart</p>
+					<p>&copy; @ViewUtility.CopyrightDates() - Parker Smart</p>
 				</div>
 				<div class="col-sm-3">
 					<a class="twitter-share-button"

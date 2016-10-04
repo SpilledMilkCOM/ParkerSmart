@@ -1,6 +1,6 @@
 ﻿namespace ParkerSmart.Utilities
 {
-	public class ControllerUtility
+	public static class ControllerUtility
 	{
 	}
 }
