@@ -135,8 +135,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\CheckOutMyStuffLogo30x30.png" />
+    <Content Include="Images\Facebook-Logo.png" />
     <Content Include="Images\GitHub-Mark-32px.png" />
-    <Content Include="Images\GitHub-Mark-Light-32px.png" />
+    <Content Include="Images\Instagram-Logo.png" />
+    <Content Include="Images\Twitter-Logo.png" />
+    <Content Include="Images\windows_store_icon__transparent_blue___homemade__by_bannax1994-d8enq8q.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
