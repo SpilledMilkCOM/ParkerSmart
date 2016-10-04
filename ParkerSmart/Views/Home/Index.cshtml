@@ -1,12 +1,33 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+	ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
-    <h1>Stuff &amp; Things</h1>
-    <p class="lead">This site is evolving constantly. Please be patient and you'll be pleasantly surprised...</p>
+	<h1>Stuff &amp; Things</h1>
+	<p class="lead">This site is evolving constantly. Please be patient and you'll be pleasantly surprised...</p>
 </div>
 
-<div class="row">
+<div class="row-divider"> </div>
 
+<div class="row">
+	<div class="col-sm-6">
+		@*This block was created from Twitter.  I commented out the <script> that was included because it's already included in the bundles for each page.*@
+
+		<blockquote class="twitter-tweet" data-lang="en">
+			<p lang="en" dir="ltr">
+				Hey <a href="https://twitter.com/twitter">@@Twitter</a> <a href="https://twitter.com/twitterapi">@@twitterapi</a>
+				Do you support a &quot;sticky&quot; tweet? You should support one per account.
+			</p>&mdash; Parker Smart (@@SpilledMilkCOM) <a href="https://twitter.com/SpilledMilkCOM/status/380843903869407232">September 20, 2013</a>
+		</blockquote>
+		@*
+			Already loading this in the parkersmart.js script
+
+			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		*@
+	</div>
+
+	<div class="col-sm-6">
+		<h4>One of MY favorite tweets because this was BEFORE Twitter implemented a "sticky" tweet. I like to think that I had a hand in this. ;-)
+		You should &lt;3 this to let Twitter know that this was an AWESOME idea.</h4>
+	</div>
 </div>
