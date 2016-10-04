@@ -23,6 +23,13 @@ namespace ParkerSmart.Controllers
 			return View();
 		}
 
+		public ActionResult Play()
+		{
+			Title = nameof(Play);
+
+			return View();
+		}
+
 		public ActionResult Versions()
 		{
 			Title = nameof(Versions);

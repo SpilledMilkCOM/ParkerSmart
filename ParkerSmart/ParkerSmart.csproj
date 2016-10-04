@@ -139,8 +139,11 @@
     <Content Include="Images\Facebook-Logo.png" />
     <Content Include="Images\GitHub-Mark-32px.png" />
     <Content Include="Images\Instagram-Logo.png" />
+    <Content Include="Images\LinkedIn_logo_initials-66x66.png" />
     <Content Include="Images\Twitter-Logo.png" />
     <Content Include="Images\windows_store_icon__transparent_blue___homemade__by_bannax1994-d8enq8q.png" />
+    <Content Include="Images\wordpress-logo-32-blue.png" />
+    <Content Include="Images\xbox-logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
@@ -172,6 +175,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Versions.cshtml" />
     <Content Include="Views\Home\Work.cshtml" />
+    <Content Include="Views\Home\Play.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
