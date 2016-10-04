@@ -2,6 +2,6 @@
 {
 	public class Constants
 	{
-		public const string APPLICATION_NAME = "ZrhoZ";
+		public const string APPLICATION_NAME = "ZρZ";
 	}
 }

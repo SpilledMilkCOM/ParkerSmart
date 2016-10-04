@@ -5,9 +5,11 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>@ViewBag.Title - My ASP.NET Application</title>
+	<title>@Constants.APPLICATION_NAME - @ViewBag.Title</title>
+
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -19,7 +21,9 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				@*@Html.ActionLink(Constants.APPLICATION_NAME, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+				<a class="navbar-brand" href="@Url.Action("Index", "Home")">
+					<span style="font-size: x-large">Zρ<span class="text-flip-horizontal">Z</span></span>
+				</a>
 
 			</div>
 			<div class="navbar-collapse collapse">
@@ -36,7 +40,7 @@
 	<div class="container body-content">
 		@RenderBody()
 
-		<hr/>
+		<hr />
 
 		<footer>
 			<div class="row">

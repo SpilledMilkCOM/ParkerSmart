@@ -20,6 +20,8 @@ namespace ParkerSmart.Controllers
 
 		public ActionResult Index()
 		{
+			Title = "Home";
+
 			return View();
 		}
 
@@ -46,6 +48,9 @@ namespace ParkerSmart.Controllers
 
 		//----==== PRIVATE ====--------------------------------------------------------------------
 
+		/// <summary>
+		/// The Title used on each page.
+		/// </summary>
 		private string Title
 		{
 			get { return ViewBag.Title; }
