@@ -1,5 +1,12 @@
 ﻿$(function () {
 
+	// ----==== MOBILE ====----
+	// This must be in place to resize for mobile (mostly)
+
+	$(window).on("load resize", function () {
+		$(".fill-screen").css("height", window.innerHeight);
+	});
+
 	// ----==== TWITTER ====----
 	// https://dev.twitter.com/web/javascript/loading
 
