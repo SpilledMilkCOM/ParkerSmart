@@ -148,6 +148,8 @@
     <Content Include="Images\aspmvc345-logo.png" />
     <Content Include="Images\NCM-Logo-Vert.png" />
     <Content Include="Images\playstation-96.png" />
+    <Content Include="Images\psmart_headshot.jpg" />
+    <Content Include="Images\psmart_headshot_thumb.jpg" />
     <Content Include="Images\Spilled Milk on Black Mini.png" />
     <Content Include="Images\Twitter-Logo.png" />
     <Content Include="Images\visual_studio_2012_logo-150x150.png" />
