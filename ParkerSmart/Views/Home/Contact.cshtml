@@ -1,40 +1,58 @@
 ﻿<div class="row">
+
+	<!-- When sized for a "medium" browser, then have a single column margin with the content 10 columns
+		There are 3 levels of nested columns.
+	-->
+
 	<div class="col-md-10 col-md-offset-1">
 		<h2>@ViewBag.Title.</h2>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="row-divider"> </div>
+
+		<!--
+			Each column of text and buttons is ALWAYS half of the content (col-xs-6)
+			Each button/text combo will be side by side until "extra-small" triggers
+			and then they will be on top of each other (but stay within their column)
+		-->
+
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="mailto://psmart@spilledmilk.com" target="_blank">
 					<span class="glyphicon glyphicon-envelope" aria-hidden="true" />
 				</a>
 			</div>
-			<div class="col-md-4">A good way to contact me.  Not the BEST way, but I'm not putting my cell phone out here.</div>
+			<div class="col-sm-9">A good way to contact me.  Not the BEST way, but I'm not putting my cell phone out here.</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/parkersmart" target="_blank">
 					<img src="~/Images/LinkedIn_logo_initials-66x66.png" width="30" />
 				</a>
 			</div>
-			<div class="col-md-4">Professional experience here. I try to keep it up to date as much as possible</div>
+			<div class="col-sm-9">Professional experience here. I try to keep it up to date as much as possible</div>
 		</div>
 
+		<div class="clearfix"> </div>
 		<div class="row-divider"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://github.com/SpilledMilkCOM" target="_blank">
 					<img src="~/Images/GitHub-Mark-32px.png" />
 				</a>
 			</div>
-			<div class="col-md-4">Follow my projects on GitHub and join in the FUN!</div>
+			<div class="col-sm-9">Follow my projects on GitHub and join in the FUN!</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://twitter.com/SpilledMilkCOM" target="_blank">
 					<img src="~/Images/Twitter-Logo.png" width="30" />
 				</a>
 			</div>
-			<div class="col-md-4">Follow me on Twitter! It's the right thing to do.</div>
-			<div class="col-md-3">
+			<div class="col-sm-5 col-xs-12">Follow me on Twitter! It's the right thing to do.</div>
+			<div class="col-sm-4 col-xs-12">
 				<a class="twitter-follow-button"
 				   href="https://twitter.com/SpilledMilkCOM"
 				   data-show-count="false"
@@ -44,51 +62,58 @@
 			</div>
 		</div>
 
+		<div class="clearfix"> </div>
 		<div class="row-divider"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.facebook.com/SpilledMilkComics" target="_blank">
 					<img src="~/Images/Facebook-Logo.png" width="30" />
 				</a>
 			</div>
-			<div class="col-md-4">Join the Spilled Milk Comics page and keep up with the LATEST.</div>
+			<div class="col-md-9">Join the Spilled Milk Comics page and keep up with the LATEST.</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.instagram.com/spilledmilkcom/" target="_blank">
 					<img src="~/Images/Instagram-Logo.png" width="30" />
 				</a>
 			</div>
-			<div class="col-md-4">INSTAGRAM - It's where all the cool kids are (apparently).</div>
+			<div class="col-md-9">INSTAGRAM - It's where all the cool kids are (apparently).</div>
 		</div>
 
+		<div class="clearfix"> </div>
 		<div class="row-divider"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://spilledmilkcom.wordpress.com/" target="_blank">
 					<img src="~/Images/wordpress-logo-32-blue.png" />
 				</a>
 			</div>
-			<div class="col-md-4">BLOG - Mostly rants here, but I've been putting out some helpful code here.</div>
+			<div class="col-md-9">BLOG - Mostly rants here, but I've been putting out some helpful code here.</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="http://www.ebay.com/usr/psmart" target="_blank">
 					<img src="~/Images/EBay_logo.png" width="40" />
 				</a>
 			</div>
-			<div class="col-md-4">When I DO sell things, I sell them here.  [Since: October 31, 1997]</div>
+			<div class="col-md-9">When I DO sell things, I sell them here.  [Since: October 31, 1997]</div>
 		</div>
 
+		<div class="clearfix"> </div>
 		<div class="row-divider"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.youtube.com/channel/UChKOxk9J7HWsJ1yt7uZ9eew" target="_blank">
 					<img src="~/Images/Youtube-Logo.png" width="40" />
 				</a>
 			</div>
-			<div class="col-md-4">A few of my gaming videos. Wins and FAILS and bugs. Also includes the Windwaker Cake video.  [Since: September 9, 2013]</div>
+			<div class="col-md-9">A few of my gaming videos. Wins and FAILS and bugs. Also includes the Windwaker Cake video.  [Since: September 9, 2013]</div>
 		</div>
 	</div>
 </div>
