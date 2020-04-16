@@ -10,6 +10,8 @@
 
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
+
+	<link rel="icon" type="image/png" href="@Constants.WEBSITE_URL/images/favicon.png">
 </head>
 
 <body>
@@ -22,7 +24,9 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="@Url.Action("Index", "Home")">
-					<span style="font-size: x-large">Zρ<span class="text-flip-horizontal">Z</span></span>
+					@*<span style="font-size: x-large">Zρ<span class="text-flip-horizontal">Z</span></span>*@
+
+					<img src="~/Images/PDS Logo 64x64 alpha.png" height="35" />
 				</a>
 			</div>
 			<div class="navbar-collapse collapse">
