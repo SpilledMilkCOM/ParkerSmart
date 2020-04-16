@@ -1,77 +1,69 @@
-﻿<h2>@ViewBag.Title.</h2>
+﻿<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<h2>@ViewBag.Title.</h2>
 
-<h4>This website is mostly used as a single point of contact and reference.</h4>
+		<h4>This website is mostly used as a single point of contact and reference.</h4>
 
-<div class="row-divider"> </div>
+		<div class="row-divider"> </div>
 
-<div class="row">
-	<div class="col-md-1">
-		<a class="btn btn-default btn-lg" href="https://www.visualstudio.com/" target="_blank">
-			<img width="40" src="~/Images/visual_studio_2012_logo-150x150.png" />
-		</a>
-	</div>
-	<div class="col-md-4">Visual Studio - Programming environment (C#, Razor, MVC, Javascript, HTML, Deploy)</div>
-</div>
+		<div class="row">
+			<div class="col-md-1">
+				<a class="btn btn-default btn-lg" href="https://www.visualstudio.com/" target="_blank">
+					<img width="40" src="~/Images/visual_studio_2012_logo-150x150.png" />
+				</a>
+			</div>
+			<div class="col-md-4">Visual Studio - Programming environment (C#, Razor, MVC, Javascript, HTML, Deploy)</div>
 
-<div class="row-divider"> </div>
+			<div class="col-md-1">
+				<a class="btn btn-default btn-lg" href="https://www.asp.net/" target="_blank">
+					<img width="40" src="~/Images/aspmvc345-logo.png" />
+				</a>
+			</div>
+			<div class="col-md-4">Some good reference on ASP .Net and MVC.</div>
+		</div>
 
-<div class="row">
-	<div class="col-md-1">
-		<a class="btn btn-default btn-lg" href="https://www.asp.net/" target="_blank">
-			<img width="40" src="~/Images/aspmvc345-logo.png" />
-		</a>
-	</div>
-	<div class="col-md-4">Some good reference on ASP .Net and MVC.</div>
-</div>
+		<div class="row-divider"> </div>
 
-<div class="row-divider"> </div>
+		<div class="row">
+			<div class="col-md-1">
+				<a class="btn btn-default btn-lg" href="http://getbootstrap.com" target="_blank">
+					<img width="40" src="~/Images/bootstrap-logo.png" />
+				</a>
+			</div>
+			<div class="col-md-4">Here's where you can get all things Bootstrap.</div>
 
-<div class="row">
-	<div class="col-md-1">
-		<a class="btn btn-default btn-lg" href="http://getbootstrap.com" target="_blank">
-			<img width="40" src="~/Images/bootstrap-logo.png" />
-		</a>
-	</div>
-	<div class="col-md-4">Here's where you can get all things Bootstrap.</div>
-</div>
+			<div class="col-md-1">
+				<a class="btn btn-danger" href="http://glyphicons.com/license/" target="_blank">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				</a>
+			</div>
+			<div class="col-md-4">Shout out to GLYPHICONS provided by Bootstrap. <img width="20" src="~/Images/bootstrap-logo.png" /></div>
+		</div>
 
-<div class="row-divider"> </div>
+		<div class="row-divider"> </div>
 
-<div class="row">
-    <div class="col-md-1">
-        <a class="btn btn-danger" href="http://glyphicons.com/license/" target="_blank">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-        </a>
-    </div>
-    <div class="col-md-4">Shout out to GLYPHICONS provided by Bootstrap. <img width="20" src="~/Images/bootstrap-logo.png" /></div>
-</div>
+		<div class="row">
+			<div class="col-md-1">
+				<a class="btn btn-default btn-lg" href="https://dev.twitter.com/web/overview" target="_blank">
+					<img width="40" src="~/Images/Twitter-Logo.png" />
+				</a>
+			</div>
+			<div class="col-md-4">Learn how to hook up Twitter widgets on YOUR website.</div>
 
-<div class="row-divider"> </div>
+			<div class="col-md-1">
+				<a class="btn btn-default btn-lg" href="https://github.com/SpilledMilkCOM/ParkerSmart" target="_blank">
+					<img src="~/Images/GitHub-Mark-32px.png" />
+				</a>
+			</div>
+			<div class="col-md-4">This site's code lives on GitHub.</div>
+		</div>
 
-<div class="row">
-	<div class="col-md-1">
-		<a class="btn btn-default btn-lg" href="https://dev.twitter.com/web/overview" target="_blank">
-			<img width="40" src="~/Images/Twitter-Logo.png"/>
-		</a>
-	</div>
-	<div class="col-md-4">Learn how to hook up Twitter widgets on YOUR website.</div>
-</div>
+		<div class="row-divider"> </div>
 
-<div class="row-divider"> </div>
-
-<div class="row">
-	<div class="col-md-1">
-		<a class="btn btn-default btn-lg" href="https://github.com/SpilledMilkCOM/ParkerSmart" target="_blank">
-			<img src="~/Images/GitHub-Mark-32px.png"/>
-		</a>
-	</div>
-	<div class="col-md-4">This site's code lives on GitHub.</div>
-</div>
-
-<div class="row-divider"> </div>
-
-<div class="row">
-	<div class="col-md-4">
-		@Html.ActionLink("Site Versions", "Versions", "Home", htmlAttributes: new { @class = "btn btn-default" })
+		<div class="row">
+			<div class="col-md-4">
+				@Html.ActionLink("Site Versions", "Versions", "Home", htmlAttributes: new { @class = "btn btn-default" })
+			</div>
+		</div>
 	</div>
 </div>

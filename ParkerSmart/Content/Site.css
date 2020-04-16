@@ -29,6 +29,11 @@ textarea {
 	min-height: 20px;
 }
 
+/* Changing the Bootstrap button style */
+.btn-default {
+	box-shadow: grey 1px 1px;
+}
+
 /* Entire text flipped around */
 .text-flip-horizontal {
 	-webkit-transform: rotateY(180deg);
