@@ -1,61 +1,78 @@
 ﻿<div class="row">
+
+	<!-- When sized for a "medium" browser, then have a single column margin with the content 10 columns
+		There are 3 levels of nested columns.
+	-->
+
 	<div class="col-md-10 col-md-offset-1">
 
 		<h2>@ViewBag.Title</h2>
 
 		<div class="row-divider"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<!--
+		Each column of text and buttons is ALWAYS half of the content (col-xs-6)
+		Each button/text combo will be side by side until "extra-small" triggers
+		and then they will be on top of each other (but stay within their column)
+		-->
+
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://account.xbox.com/en-us/profile?gamerTag=spilledmilkcom" target="_blank">
 					<img src="~/Images/xbox-logo.png" width="40" />
 				</a>
 			</div>
-			<div class="col-md-4">My Xbox Live profile.  C'mon and join the FUN!</div>
+			<div class="col-sm-9">My Xbox Live profile.  C'mon and join the FUN!</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://my.playstation.com/SpilledMilkCOM" target="_blank">
 					<img src="~/Images/playstation-96.png" width="40" />
 				</a>
 			</div>
-			<div class="col-md-4">My Playstation Network profile.  Only have a Playstation for its exclusive games.</div>
+			<div class="col-sm-9">My Playstation Network profile.  Only have a Playstation for its exclusive games.</div>
+		</div>
 
-			<div class="clearfix"> </div>
-			<div class="row-divider"> </div>
+		<div class="clearfix"> </div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.twitch.tv/spilledmilkcom" target="_blank">
 					<img src="~/Images/twitch-logo.png" width="40" />
 				</a>
 			</div>
-			<div class="col-md-4">My Twitch "channel" for streaming.</div>
+			<div class="col-sm-9">My Twitch "channel" for streaming.</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://mixer.com/SpilledMilkCOM" target="_blank">
 					<img src="~/Images/mixer-logo.png" width="40" />
 				</a>
 			</div>
-			<div class="col-md-4">My Mixer "channel" for streaming.</div>
+			<div class="col-sm-9">My Mixer "channel" for streaming.</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="clearfix"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.youtube.com/channel/UChKOxk9J7HWsJ1yt7uZ9eew" target="_blank">
 					<img src="~/Images/Youtube-Logo.png" width="40" />
 				</a>
 			</div>
-			<div class="col-md-4">A few of my gaming videos. Wins and FAILS and bugs. Also includes the Windwaker Cake video.  [Since: September 9, 2013]</div>
+			<div class="col-sm-9">A few of my gaming videos. Wins and FAILS and bugs. Also includes the Windwaker Cake video.  [Since: September 9, 2013]</div>
 		</div>
 
+		<div class="clearfix"> </div>
 		<div class="row-divider"> </div>
 
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/CFdwXAc39I0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/ORe-IU53ErY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>

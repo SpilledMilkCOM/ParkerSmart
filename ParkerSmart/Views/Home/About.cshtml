@@ -1,66 +1,85 @@
 ﻿<div class="row">
+
+	<!-- When sized for a "medium" browser, then have a single column margin with the content 10 columns
+		There are 3 levels of nested columns.
+	-->
+
 	<div class="col-md-10 col-md-offset-1">
-		<h2>@ViewBag.Title.</h2>
+		<h2>@ViewBag.Title</h2>
 
 		<h4>This website is mostly used as a single point of contact and reference.</h4>
 
 		<div class="row-divider"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<!--
+	Each column of text and buttons is ALWAYS half of the content (col-xs-6)
+	Each button/text combo will be side by side until "extra-small" triggers
+	and then they will be on top of each other (but stay within their column)
+	-->
+
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.visualstudio.com/" target="_blank">
 					<img width="40" src="~/Images/visual_studio_2012_logo-150x150.png" />
 				</a>
 			</div>
-			<div class="col-md-4">Visual Studio - Programming environment (C#, Razor, MVC, Javascript, HTML, Deploy)</div>
+			<div class="col-md-9">Visual Studio - Programming environment (C#, Razor, MVC, Javascript, HTML, Deploy)</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.asp.net/" target="_blank">
 					<img width="40" src="~/Images/aspmvc345-logo.png" />
 				</a>
 			</div>
-			<div class="col-md-4">Some good reference on ASP .Net and MVC.</div>
+			<div class="col-md-9">Some good reference on ASP .Net and MVC.</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="clearfix"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="http://getbootstrap.com" target="_blank">
 					<img width="40" src="~/Images/bootstrap-logo.png" />
 				</a>
 			</div>
-			<div class="col-md-4">Here's where you can get all things Bootstrap.</div>
+			<div class="col-md-9">Here's where you can get all things Bootstrap.</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-danger" href="http://glyphicons.com/license/" target="_blank">
 					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 				</a>
 			</div>
-			<div class="col-md-4">Shout out to GLYPHICONS provided by Bootstrap. <img width="20" src="~/Images/bootstrap-logo.png" /></div>
+			<div class="col-md-9">Shout out to GLYPHICONS provided by Bootstrap. <img width="20" src="~/Images/bootstrap-logo.png" />
+				Apparently these should be swapped out with something else.  Emojis?
+			</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="clearfix"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://dev.twitter.com/web/overview" target="_blank">
 					<img width="40" src="~/Images/Twitter-Logo.png" />
 				</a>
 			</div>
-			<div class="col-md-4">Learn how to hook up Twitter widgets on YOUR website.</div>
+			<div class="col-md-9">Learn how to hook up Twitter widgets on YOUR website.</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://github.com/SpilledMilkCOM/ParkerSmart" target="_blank">
 					<img src="~/Images/GitHub-Mark-32px.png" />
 				</a>
 			</div>
-			<div class="col-md-4">This site's code lives on GitHub.</div>
+			<div class="col-md-9">This site's code lives on GitHub.</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="clearfix"> </div>
 
-		<div class="row">
+		<div class="card-btn-text col-xs-6">
 			<div class="col-md-4">
 				@Html.ActionLink("Site Versions", "Versions", "Home", htmlAttributes: new { @class = "btn btn-default" })
 			</div>

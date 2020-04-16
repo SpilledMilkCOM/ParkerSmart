@@ -1,146 +1,162 @@
 ﻿<div class="row">
+
+	<!-- When sized for a "medium" browser, then have a single column margin with the content 10 columns
+		There are 3 levels of nested columns.
+	-->
+
 	<div class="col-md-10 col-md-offset-1">
 
 		<h2>@ViewBag.Title</h2>
 
 		<div class="row-divider"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<!--
+		Each column of text and buttons is ALWAYS half of the content (col-xs-6)
+		Each button/text combo will be side by side until "extra-small" triggers
+		and then they will be on top of each other (but stay within their column)
+		-->
+
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="~/Parker Smart's Resume.pdf">
 					<span class="glyphicon glyphicon-file" aria-hidden="true" />
 				</a>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-9">
 				A fairly up to date <strong>resumé</strong>, but a LONGER (more complete) resumé is out on my <a href="https://www.linkedin.com/in/parkersmart">LinkedIn</a> profile complete with "shout out's" and recommendations.
 			</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://github.com/SpilledMilkCOM/DenDevDayUWP" target="_blank">
 					<img src="~/Images/GitHub-Mark-32px.png" />
 				</a>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-9">
 				My "Giving Back" presentation(s) for the Denver Dev Day 06-23-2017.
 				A sample app to showcase part of Microsoft's UWP Community Toolkit.
 				Hopefully the talk will inspire others to help with the toolkit as well and I don't put everybody to sleep.
 			</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="clearfix"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="http://mooveepicker.azurewebsites.net/" target="_blank">
 					<img width="55" src="~/Images/Moovee Picker Cow128x128.png" />
 				</a>
 			</div>
 
-			<div class="col-md-5">
+			<div class="col-md-9">
 				MooVee Picker - A site that aggregates Box Office data from many different sources and allows you to make intelligent screen choices for the
 				<a href="https://fantasymovieleague.com/" target="_blank">Fantasy Movie Leage</a> game.
 			</div>
+		</div>
 
-			<div class="col-md-1">
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://github.com/SpilledMilkCOM/DenDevDayEFCore" target="_blank">
 					<img src="~/Images/GitHub-Mark-32px.png" />
 				</a>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-9">
 				My previous Denver DEV Day presentation - Entity Framework Core.  Officially only presenting THE BASICS instead of intermediate and advanced too.
 			</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="clearfix"> </div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="card-btn-text col-sm-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="http://www.ncm.com/" target="_blank">
 					<img width="35" src="~/Images/NCM-Logo-Vert.png" />
 				</a>
 			</div>
-			<div class="col-md-5">National CineMedia - I work here as an "Enterprise Solutions Architect". Currently working on microservices in either <a href="http://www.microsoft.com/net/core">.Net Core or .Net Standard</a>. None of what I do is public facing, sorry about that.</div>
-
-			<div class="col-md-3">
-				<a class="twitter-follow-button"
-				   href="https://twitter.com/NCMNews"
-				   data-show-count="true"
-				   data-size="large">
-					Follow @@NCMNews
-				</a>
-			</div>
+			<div class="col-md-9">National CineMedia - I work here as an "Enterprise Solutions Architect". Currently working on microservices in either <a href="http://www.microsoft.com/net/core">.Net Core or .Net Standard</a>. None of what I do is public facing, sorry about that.</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="card-btn-text col-sm-6 col-xs-12">
+			<a class="twitter-follow-button"
+			   href="https://twitter.com/NCMNews"
+			   data-show-count="true"
+			   data-size="large">
+				Follow @@NCMNews
+			</a>
+		</div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="clearfix"> </div>
+
+		<div class="card-btn-text col-sm-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="http://spilledmilk.com" target="_blank">
 					<img width="35" src="~/Images/Spilled Milk on Black Mini.png" />
 				</a>
 			</div>
-			<div class="col-md-5">CiCi @@ Spilled Milk Comics - A science fiction comic book mini-series I published back in mid 2002.  The source code for the site is out on GitHub.</div>
+			<div class="col-md-9">CiCi @@ Spilled Milk Comics - A science fiction comic book mini-series I published back in mid 2002.  The source code for the site is out on GitHub.</div>
 
-			<div class="col-md-3">
-				<a class="twitter-follow-button"
-				   href="https://twitter.com/SpilledMilkCOM"
-				   data-show-count="true"
-				   data-size="large">
-					Follow @@SpilledMilkCOM
-				</a>
-			</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="card-btn-text col-sm-6 col-xs-12">
+			<a class="twitter-follow-button"
+			   href="https://twitter.com/SpilledMilkCOM"
+			   data-show-count="true"
+			   data-size="large">
+				Follow @@SpilledMilkCOM
+			</a>
+		</div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="clearfix"> </div>
+
+		<div class="card-btn-text col-sm-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="http://www.CheckOutMyStuff.net" target="_blank">
 					<img src="~/Images/CheckOutMyStuffLogo30x30.png" />
 				</a>
 			</div>
 
-			<div class="col-md-5">Check Out My Stuff - A free library site for YOUR stuff that you want to loan out to people (just cause you can and you're nice).  I may put the source out on GitHub.</div>
-
-			<div class="col-md-3">
-				<a class="twitter-follow-button"
-				   href="https://twitter.com/CheckOutMyStuff"
-				   data-show-count="true"
-				   data-size="large">
-					Follow @@CheckOutMyStuff
-				</a>
-			</div>
+			<div class="col-md-9">Check Out My Stuff - A free library site for YOUR stuff that you want to loan out to people (just cause you can and you're nice).  I may put the source out on GitHub.</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="card-btn-text col-sm-6 col-xs-12">
+			<a class="twitter-follow-button"
+			   href="https://twitter.com/CheckOutMyStuff"
+			   data-show-count="true"
+			   data-size="large">
+				Follow @@CheckOutMyStuff
+			</a>
+		</div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="clearfix"> </div>
+
+		<div class="card-btn-text col-sm-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://www.microsoft.com/en-us/store/p/idiot-driver/9nblggh0j6ds" target="_blank">
 					<img width="35" src="~/Images/IdiotDriver.png" />
 				</a>
 			</div>
-			<div class="col-md-5">Idiot Driver - A voice driven twitter client to rant about idiots on the road.  Coming soon to the Apple Store and Google Play.</div>
-
-			<div class="col-md-3">
-				<a class="twitter-follow-button"
-				   href="https://twitter.com/IdiotDriverApp"
-				   data-show-count="true"
-				   data-size="large">
-					Follow @@IdiotDriverApp
-				</a>
-			</div>
+			<div class="col-md-9">Idiot Driver - A voice driven twitter client to rant about idiots on the road.  Coming soon to the Apple Store and Google Play.</div>
 		</div>
 
-		<div class="row-divider"> </div>
+		<div class="card-btn-text col-sm-6 col-xs-12">
+			<a class="twitter-follow-button"
+			   href="https://twitter.com/IdiotDriverApp"
+			   data-show-count="true"
+			   data-size="large">
+				Follow @@IdiotDriverApp
+			</a>
+		</div>
 
-		<div class="row">
-			<div class="col-md-1">
+		<div class="clearfix"> </div>
+
+		<div class="card-btn-text col-xs-6">
+			<div class="col-sm-3 col-xs-12">
 				<a class="btn btn-default btn-lg" href="https://github.com/SpilledMilkCOM/ParkerSmart" target="_blank">
 					<img src="~/Images/GitHub-Mark-32px.png" />
 				</a>
 			</div>
-			<div class="col-md-5">This site's code lives on GitHub.  So &lt;meta/&gt;</div>
+			<div class="col-md-9">This site's code lives on GitHub (since 10/1/2016).  So &lt;meta/&gt;</div>
 		</div>
 	</div>
 </div>
