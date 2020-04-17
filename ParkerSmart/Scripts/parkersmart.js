@@ -7,6 +7,10 @@
 		$(".fill-screen").css("height", window.innerHeight);
 	});
 
+	//  ----==== BOOTSTRAP 4 ====----
+	// Always popped open versus data-toggle
+	// $('.collapse').collapse()
+
 	// ----==== TWITTER ====----
 	// https://dev.twitter.com/web/javascript/loading
 

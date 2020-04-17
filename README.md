@@ -14,6 +14,8 @@ Oh well, I'm not paying for their VPN service especially when I only have FREE s
   * Adjusting the `navbar` elements.
   * Replace `glyphicon` with [Iconic](https://useiconic.com/) (~$40)
   * Adjusting the columns and nested columns.
+  * The [commit](https://github.com/SpilledMilkCOM/ParkerSmart/commit/b3a1ff08181d6dcb044fe1440812f99c8cc60512)
+    that has all the conversions.
 
 ### References
 
