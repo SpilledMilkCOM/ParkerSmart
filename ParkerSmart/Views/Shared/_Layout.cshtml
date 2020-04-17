@@ -15,63 +15,62 @@
 </head>
 
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+	<div class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
 
-				<a class="navbar-brand" href="@Url.Action("Index", "Home")">
-					@*<span style="font-size: x-large">Zρ<span class="text-flip-horizontal">Z</span></span>*@
-					<div style="position: relative; width: 0; height: 0">
-						<img src="~/Images/PDS Logo 64x64 alpha.png" style="position: absolute; left: -5px; top: -7px; height: 40px;" />
-					</div>
-				</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li>@Html.ActionLink("Home", "Index", "Home")</li>
-					<li>@Html.ActionLink("Work", "Work", "Home")</li>
-					<li>@Html.ActionLink("Play", "Play", "Home")</li>
-					<li>@Html.ActionLink("About", "About", "Home")</li>
-					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-				</ul>
-			</div>
+		@*Do NOT use @Html.Action() or you WILL get a "stack overflow" error*@
+
+		<a class="navbar-brand" href="~/Home">
+			<img src="~/Images/PDS Logo 64x64 alpha.png" style="height: 2em;" />
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="mainNavBar">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link" })
+				</li>
+				<li class="nav-item">
+					@Html.ActionLink("Work", "Work", "Home", new { @class = "nav-link" })
+				</li>
+				<li class="nav-item">
+					@Html.ActionLink("Play", "Play", "Home", new { @class = "nav-link" })
+				</li>
+				<li class="nav-item">
+					@Html.ActionLink("About", "About", "Home", new { @class = "nav-link" })
+				</li>
+				<li class="nav-item">
+					@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link" })
+				</li>
+			</ul>
 		</div>
 	</div>
 
-	@*Having the container-fluid will make the content rearrange better on a phone.*@
-
-	<div class="body-content container-fluid">
+	<main role="main">
 		@RenderBody()
-	</div>
+	</main>
 
-	<footer>
-		<div class="body-content container-fluid">
-			<div class="row row-divider"> </div>
+	<footer class="container">
+		<div class="row">
+			<div class="col-8 col-md-6">
+				&copy; @ViewUtility.CopyrightDates() - @Html.ActionLink("Parker Smart", "Contact", "Home")
+			</div>
 
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="col-sm-6 col-xs-10">
-						&copy; @ViewUtility.CopyrightDates() - @Html.ActionLink("Parker Smart", "Contact", "Home")
-					</div>
-					<div class="col-sm-3 col-xs-2">
-						<a class="twitter-share-button"
-						   href="https://twitter.com/intent/tweet">
-							Tweet
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a class="twitter-follow-button"
-						   href="https://twitter.com/SpilledMilkCOM"
-						   data-show-count="true">
-							Follow @@SpilledMilkCOM
-						</a>
-					</div>
-				</div>
+			<div class="col-2 col-md-3">
+				<a class="twitter-share-button"
+				   href="https://twitter.com/intent/tweet">
+					Tweet
+				</a>
+			</div>
+
+			<div class="col-12 col-md-3">
+				<a class="twitter-follow-button"
+				   href="https://twitter.com/SpilledMilkCOM"
+				   data-show-count="true">
+					Follow @@SpilledMilkCOM
+				</a>
 			</div>
 		</div>
 	</footer>

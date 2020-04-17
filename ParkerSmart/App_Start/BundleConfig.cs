@@ -25,6 +25,7 @@ namespace ParkerSmart
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					  "~/Content/bootstrap.css",
+					  "~/Content/iconic-bootstrap.css",
 					  "~/Content/site.css"));
 
 			// Adding the "custom" scripts to a bundle.

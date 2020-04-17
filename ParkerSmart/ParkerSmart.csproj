@@ -122,12 +122,13 @@
     <Compile Include="Utilities\ViewUtility.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\iconic-bootstrap.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\iconic-lg.svg" />
+    <Content Include="fonts\iconic-md.svg" />
+    <Content Include="fonts\iconic-sm.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\CheckOutMyStuffLogo30x30.png" />
@@ -157,14 +158,20 @@
     <Content Include="Images\xbox-logo.png" />
     <Content Include="Images\Youtube-Logo.png" />
     <Content Include="Parker Smart%27s Resume.pdf" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\iconic-lg.eot" />
+    <Content Include="fonts\iconic-lg.otf" />
+    <Content Include="fonts\iconic-lg.ttf" />
+    <Content Include="fonts\iconic-lg.woff" />
+    <Content Include="fonts\iconic-md.eot" />
+    <Content Include="fonts\iconic-md.otf" />
+    <Content Include="fonts\iconic-md.ttf" />
+    <Content Include="fonts\iconic-md.woff" />
+    <Content Include="fonts\iconic-sm.eot" />
+    <Content Include="fonts\iconic-sm.otf" />
+    <Content Include="fonts\iconic-sm.ttf" />
+    <Content Include="fonts\iconic-sm.woff" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
     <Content Include="robots.txt" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />

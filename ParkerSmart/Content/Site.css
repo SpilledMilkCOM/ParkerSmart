@@ -1,12 +1,6 @@
 ﻿body {
-	padding-top: 50px;
-	padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-top: 4.5em;
+	padding-bottom: 1em;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -27,28 +21,21 @@ textarea {
 
 /* Changing the Bootstrap button style */
 .btn-default {
-	box-shadow: grey 1px 1px;
+	border-color: lightgray;
+	border-width: 0.06em;
+	box-shadow: grey 0.07em 0.07em;
 }
 
-/*
-	margin-right: 5px;
-	min-height: 80px;
-*/
+.btn-jumbo {
+	margin-right: 0.5em;
+}
 
 .card-btn-text {
 	border-top: inset;
-	border-width: 1px;
-	padding: 7px;
+	border-width: 0.06em;
+	padding: 0.5em;
 }
 
 .row-divider {
-	min-height: 20px;
-}
-
-/* Entire text flipped around */
-.text-flip-horizontal {
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
+	min-height: 1em;
 }
