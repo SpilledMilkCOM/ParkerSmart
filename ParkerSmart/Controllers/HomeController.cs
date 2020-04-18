@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using ParkerSmart.Utilities;
+using System.Web.Mvc;
 
 namespace ParkerSmart.Controllers
 {
@@ -8,12 +9,16 @@ namespace ParkerSmart.Controllers
 		{
 			Title = nameof(About);
 
+			ControllerUtility.SetTwitterCard(ViewBag);
+
 			return View();
 		}
 
 		public ActionResult Contact()
 		{
 			Title = nameof(Contact);
+
+			ControllerUtility.SetTwitterCard(ViewBag);
 
 			return View();
 		}
@@ -22,12 +27,16 @@ namespace ParkerSmart.Controllers
 		{
 			Title = "Home";
 
+			ControllerUtility.SetTwitterCard(ViewBag);
+
 			return View();
 		}
 
 		public ActionResult Play()
 		{
 			Title = nameof(Play);
+
+			ControllerUtility.SetTwitterCard(ViewBag);
 
 			return View();
 		}
@@ -36,12 +45,16 @@ namespace ParkerSmart.Controllers
 		{
 			Title = nameof(Versions);
 
+			ControllerUtility.SetTwitterCard(ViewBag);
+
 			return View();
 		}
 
 		public ActionResult Work()
 		{
 			Title = nameof(Work);
+
+			ControllerUtility.SetTwitterCard(ViewBag);
 
 			return View();
 		}

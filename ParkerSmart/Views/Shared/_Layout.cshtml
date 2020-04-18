@@ -8,6 +8,24 @@
 
 	<title>@Constants.APPLICATION_NAME.@ViewBag.Title</title>
 
+	@if (ViewBag.TwitterCard != null)
+	{
+		<meta name="twitter:card" content="@ViewBag.TwitterCard" />
+		<meta name="twitter:site" content="@ViewBag.TwitterId" />
+		<meta name="twitter:creator" content="@ViewBag.TwitterCreatorId" />
+		<meta name="twitter:title" content="@ViewBag.TwitterTitle" />
+		<meta name="twitter:description" content="@ViewBag.TwitterDescription" />
+		<meta name="twitter:image" content="@ViewBag.TwitterImage" />
+		<meta name="twitter:image:alt" content="@ViewBag.TwitterImageAlt" />
+
+		<meta property="og:title" content="@ViewBag.TwitterTitle" />
+		<meta property="og:description" content="@ViewBag.TwitterDescription" />
+		<meta property="og:image" content="@ViewBag.TwitterImage" />
+		<meta property="og:image:alt" content="@ViewBag.TwitterImageAlt" />
+		<meta property="og:site_name" content="@ViewBag.OpenGraphSiteName" />
+		<meta property="og:url" content="@ViewBag.OpenGraphUrl">
+	}
+
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
 
