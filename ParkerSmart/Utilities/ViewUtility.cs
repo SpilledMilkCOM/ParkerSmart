@@ -4,7 +4,7 @@ namespace ParkerSmart.Utilities
 {
 	public static class ViewUtility
 	{
-		private const int BASE_COPYRIGHT_YEAR = 2016;
+		private const int BASE_COPYRIGHT_YEAR = 2006;
 
 		public static string CopyrightDates()
 		{
