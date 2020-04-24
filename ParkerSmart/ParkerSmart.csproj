@@ -122,15 +122,18 @@
     <Compile Include="Utilities\ViewUtility.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apple-touch-icon-120x120-precomposed.png" />
+    <Content Include="apple-touch-icon-152x152-precomposed.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\iconic-bootstrap.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\iconic-lg.svg" />
     <Content Include="fonts\iconic-md.svg" />
     <Content Include="fonts\iconic-sm.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\apple-touch-icon-120x120-precomposed.png" />
+    <Content Include="Images\apple-touch-icon-152x152-precomposed.png" />
     <Content Include="Images\CheckOutMyStuffLogo30x30.png" />
     <Content Include="Images\comics-price-guide-logo.png" />
     <Content Include="Images\EBay_logo.png" />
