@@ -145,9 +145,11 @@
     <Content Include="Images\LinkedIn_logo_initials-66x66.png" />
     <Content Include="Images\bootstrap-logo.png" />
     <Content Include="Images\aspmvc345-logo.png" />
+    <Content Include="Images\Milk Spill 3.png" />
     <Content Include="Images\mixer-logo.png" />
     <Content Include="Images\Moovee Picker Cow128x128.png" />
     <Content Include="Images\NCM-Logo-Vert.png" />
+    <Content Include="Images\pdf-logo-50x50.png" />
     <Content Include="Images\PDS Logo 64x64 alpha.png" />
     <Content Include="Images\playstation-96.png" />
     <Content Include="Images\psmart_headshot.jpg" />
@@ -160,6 +162,7 @@
     <Content Include="Images\windows_store_icon__transparent_blue___homemade__by_bannax1994-d8enq8q.png" />
     <Content Include="Images\wordpress-logo-32-blue.png" />
     <Content Include="Images\xbox-logo.png" />
+    <Content Include="Images\Youtube-Logo-50x36.png" />
     <Content Include="Images\Youtube-Logo.png" />
     <Content Include="Parker Smart%27s Resume.pdf" />
     <Content Include="Content\bootstrap.min.css.map" />

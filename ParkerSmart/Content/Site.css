@@ -25,6 +25,7 @@ textarea {
 .btn-jumbo {
 	margin-bottom: 0.5em;
 	margin-right: 0.5em;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 .card-btn-text {
@@ -38,6 +39,17 @@ textarea {
 .container-main {
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+/*
+	background-attachment: static;
+ */
+
+.jumbotron-background {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.9) 100%), url('../Images/Milk Spill 3.png');
 }
 
 .row-divider {

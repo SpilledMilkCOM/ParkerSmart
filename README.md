@@ -1,4 +1,4 @@
-# [ParkerSmart.com](http://ParkerSmart.com) (zrhoz.com)
+# [ParkerSmart.com](http://ParkerSmart.com) (formerly zrhoz.com)
 The personal website of Parker Smart.  Lists web presence and dev achievements.
 
 GoDaddy does NOT support .Net Core on their PLESK servers so I had to revert back to .Net MVC.
@@ -12,7 +12,8 @@ Oh well, I'm not paying for their VPN service especially when I only have FREE s
 * Embedding YouTube videos
 * Converting to [Bootstrap](https://getbootstrap.com) 4
   * Adjusting the `navbar` elements.
-  * Replace `glyphicon` with [Iconic](https://useiconic.com/) (~$40)
+  * Replace `glyphicon` with [Iconic](https://useiconic.com/) (~$40 - Do I have to give them a shoutout on
+    my site if I **pay** for these their fonts?)
   * Adjusting the columns and nested columns.
   * The [commit](https://github.com/SpilledMilkCOM/ParkerSmart/commit/b3a1ff08181d6dcb044fe1440812f99c8cc60512)
     that has all the conversions.
