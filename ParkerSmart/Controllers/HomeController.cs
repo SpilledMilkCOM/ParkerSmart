@@ -1,4 +1,7 @@
-﻿using ParkerSmart.Utilities;
+﻿using ParkerSmart.Models;
+using ParkerSmart.Utilities;
+using System;
+using SysIO = System.IO;			// Because File() is a method off of Controller
 using System.Web.Mvc;
 
 namespace ParkerSmart.Controllers
@@ -27,6 +30,7 @@ namespace ParkerSmart.Controllers
 		{
 			Title = "Home";
 
+			SetVersion();
 			ControllerUtility.SetTwitterCard(ViewBag);
 
 			return View();
@@ -60,6 +64,16 @@ namespace ParkerSmart.Controllers
 		}
 
 		//----==== PRIVATE ====--------------------------------------------------------------------
+
+		private void SetVersion()
+		{
+			// "File()" is a method off of the controller.  :(
+
+			var versionFilePath = $"{Server?.MapPath("~")}bin{SysIO.Path.DirectorySeparatorChar}{Constants.APPLICATION_VERSION_FILE}";
+			var fileDate = SysIO.File.Exists(versionFilePath) ? SysIO.File.GetLastWriteTime(versionFilePath) : (DateTime?)null;
+
+			ViewUtility.Version(fileDate?.ToString("yyyy.MM.dd"));
+		}
 
 		/// <summary>
 		/// The Title used on each page.

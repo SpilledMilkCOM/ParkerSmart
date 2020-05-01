@@ -6,6 +6,8 @@ namespace ParkerSmart.Utilities
 	{
 		private const int BASE_COPYRIGHT_YEAR = 2006;
 
+		private static string _version;
+
 		public static string CopyrightDates()
 		{
 			string result = BASE_COPYRIGHT_YEAR.ToString();
@@ -16,6 +18,16 @@ namespace ParkerSmart.Utilities
 			}
 
 			return result;
+		}
+
+		public static string Version(string version = null)
+		{
+			if (_version == null && version != null)
+			{
+				_version = version;
+			}
+
+			return _version;
 		}
 	}
 }

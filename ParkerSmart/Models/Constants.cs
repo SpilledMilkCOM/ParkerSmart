@@ -4,6 +4,7 @@
 	{
 //		public const string APPLICATION_NAME = "ZρZ";
 		public const string APPLICATION_NAME = "pds";
+		public const string APPLICATION_VERSION_FILE = "ParkerSmart.dll";
 
 		public const string TWITTER_CREATOR_ID = "@SpilledMilkCOM";
 		public const string TWITTER_ID = "@SpilledMilkCOM";
