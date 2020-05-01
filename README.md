@@ -23,3 +23,4 @@ Oh well, I'm not paying for their VPN service especially when I only have FREE s
 * Bootstrap 4 Icons - https://useiconic.com/
 * Twitter - https://developer.twitter.com/en
 * Emoji - https://www.w3schools.com/charsets/ref_emoji.asp
+* `linear-gradient` - https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
