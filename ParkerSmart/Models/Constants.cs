@@ -9,6 +9,6 @@
 		public const string TWITTER_ID = "@SpilledMilkCOM";
 		public const string TWITTER_TITLE = "Parker Smart";
 
-		public const string WEBSITE_URL = "http://www.zrhoz.com";
+		public const string WEBSITE_URL = "http://parkersmart.com";
 	}
 }
