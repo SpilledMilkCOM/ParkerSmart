@@ -41,6 +41,13 @@ textarea {
 	margin-bottom: 1em;
 }
 
+/* For the animated header / navbar */
+
+.cbp-af-header-shrink {
+	padding: 0em 0em;
+	opacity: 0.9;
+}
+
 .jumbotron-background {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -48,8 +55,9 @@ textarea {
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.9) 100%), url('../Images/Milk Spill 3.png');
 }
 
-.nav-opacity {
+.nav-settings {
 	opacity: 0.8;
+	margin-bottom: 0em;
 }
 
 .p-jumbo {

@@ -23,17 +23,17 @@
 		<meta property="og:image" content="@ViewBag.TwitterImage" />
 		<meta property="og:image:alt" content="@ViewBag.TwitterImageAlt" />
 		@*
-			Haven't really needed these.
+				Haven't really needed these.
 
-		<meta property="og:image:width" content="1024">
-		<meta property="og:image:height" content="1024">
+			<meta property="og:image:width" content="1024">
+			<meta property="og:image:height" content="1024">
 		*@
 		<meta property="og:site_name" content="@ViewBag.OpenGraphSiteName" />
 		<meta property="og:url" content="@ViewBag.OpenGraphUrl">
 	}
 
 	@Styles.Render("~/Content/css")
-	@Scripts.Render("~/bundles/modernizr")
+	@Styles.Render("~/Content/animate")
 
 	<link rel="icon" type="image/png" href="@Constants.WEBSITE_URL/images/favicon.png">
 
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark nav-opacity">
+	<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark nav-settings cbp-af-header">
 
 		@*Do NOT use @Html.Action() or you WILL get a "stack overflow" error*@
 
@@ -118,8 +118,12 @@
 
 	@Scripts.Render("~/bundles/jquery")
 	@Scripts.Render("~/bundles/bootstrap")
+	@Scripts.Render("~/bundles/classie")
+	@Scripts.Render("~/bundles/cbpAnimatedHeader")
+	@Scripts.Render("~/bundles/modernizr")
 
 	@*Making sure that the script bundle is brought into EACH page.*@
+	@* Custom script has to go last to initialize Facebook, Twitter, etc.  *@
 	@Scripts.Render("~/bundles/parkersmart")
 
 	@RenderSection("scripts", required: false)
