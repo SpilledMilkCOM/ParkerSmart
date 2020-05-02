@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>@Constants.APPLICATION_NAME.@ViewBag.Title</title>
+	<title>@Constants.APPLICATION_NAME.@ViewBag.Title.ToLower()</title>
 
 	@if (ViewBag.TwitterCard != null)
 	{
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark nav-opacity">
 
 		@*Do NOT use @Html.Action() or you WILL get a "stack overflow" error*@
 
@@ -96,7 +96,7 @@
 			</div>
 
 			<div class="col-3 col-md-3 col-lg-4">
-				ver:&nbsp;<a href="https://github.com/SpilledMilkCOM/MooveePicker/commits/master" target="_blank">@ViewUtility.Version()</a>
+				ver:&nbsp;<a href="https://github.com/SpilledMilkCOM/ParkerSmart/commits/master" target="_blank">@ViewUtility.Version()</a>
 			</div>
 
 			<div class="col-2 col-md-2">
