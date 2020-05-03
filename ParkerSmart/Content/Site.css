@@ -44,7 +44,8 @@ textarea {
 /* For the animated header / navbar */
 
 .cbp-af-header-shrink {
-	padding: 0em 0em;
+	padding-top: 0em;
+	padding-bottom: 0em;
 	opacity: 0.9;
 }
 
