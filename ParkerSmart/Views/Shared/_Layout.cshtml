@@ -89,28 +89,62 @@
 		@RenderBody()
 	</main>
 
+	@*
+		Remember "Mobile First"
+		START with the mobile layout
+		THEN change as you grow to larger devices.
+
+		.col- (extra small devices - screen width less than 576px)
+		.col-sm- (small devices - screen width equal to or greater than 576px)
+		.col-md- (medium devices - screen width equal to or greater than 768px)
+		.col-lg- (large devices - screen width equal to or greater than 992px)
+		.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+		On Mobile:
+
+		|Copyright  |Version   |
+		|Follow          |Tweet|
+
+		Small & Medium:
+
+		|Copyright  |Version   |Tweet|
+		|Follow                      |
+
+		Large & XL:
+
+		|Copyright  |Version   |Follow      |Tweet|
+
+		At the small threshold the order of the Tweet button is moved next to the version and the Follow button is moved last.
+		At the Large threshold the order is put back.
+		The widths are adjusted accordingly so there is no overlap.
+
+		When you read the column classes, start at the left and the chunks will add up to 12.
+		Then move to the right encountering the size thresholds which will adjust the widths.
+		I put thresholds in their sizing order xs -> sm -> md -> lg -> xl
+	*@
+
 	<footer class="container" style="margin-bottom: 1em;">
 		<div class="row">
-			<div class="col-7 col-sm-5 col-md-4 col-lg-3">
+			<div class="col-8 col-sm-6 col-md-4">
 				&copy; @ViewUtility.CopyrightDates() - @Html.ActionLink("Parker Smart", "Contact", "Home")
 			</div>
 
-			<div class="col-3 col-md-3 col-lg-4">
-				ver:&nbsp;<a href="https://github.com/SpilledMilkCOM/ParkerSmart/commits/master" target="_blank">@ViewUtility.Version()</a>
+			<div class="col-4 col-sm-4 col-md-6 col-lg-3">
+				v.&nbsp;<a href="https://github.com/SpilledMilkCOM/ParkerSmart/commits/master" target="_blank">@ViewUtility.Version()</a>
 			</div>
 
-			<div class="col-2 col-md-2">
-				<a class="twitter-share-button"
-				   href="https://twitter.com/intent/tweet">
-					Tweet
-				</a>
-			</div>
-
-			<div class="col-12 col-md-3">
+			<div class="col-9 order-sm-12 col-lg-4 order-lg-3">
 				<a class="twitter-follow-button"
 				   href="https://twitter.com/SpilledMilkCOM"
 				   data-show-count="true">
 					Follow @@SpilledMilkCOM
+				</a>
+			</div>
+
+			<div class="col-3 col-sm-2 order-sm-3 col-lg-1 order-lg-12">
+				<a class="twitter-share-button"
+				   href="https://twitter.com/intent/tweet">
+					Tweet
 				</a>
 			</div>
 		</div>
