@@ -12,7 +12,7 @@ namespace ParkerSmart.Controllers
 		{
 			Title = nameof(About);
 
-			ControllerUtility.SetTwitterCard(ViewBag);
+			SetOpenGraphMeta();
 
 			return View();
 		}
@@ -21,7 +21,7 @@ namespace ParkerSmart.Controllers
 		{
 			Title = nameof(Contact);
 
-			ControllerUtility.SetTwitterCard(ViewBag);
+			SetOpenGraphMeta();
 
 			return View();
 		}
@@ -31,7 +31,7 @@ namespace ParkerSmart.Controllers
 			Title = "Home";
 
 			SetVersion();
-			ControllerUtility.SetTwitterCard(ViewBag);
+			SetOpenGraphMeta();
 
 			return View();
 		}
@@ -40,7 +40,7 @@ namespace ParkerSmart.Controllers
 		{
 			Title = nameof(Play);
 
-			ControllerUtility.SetTwitterCard(ViewBag);
+			SetOpenGraphMeta();
 
 			return View();
 		}
@@ -49,7 +49,7 @@ namespace ParkerSmart.Controllers
 		{
 			Title = nameof(Versions);
 
-			ControllerUtility.SetTwitterCard(ViewBag);
+			SetOpenGraphMeta();
 
 			return View();
 		}
@@ -58,12 +58,17 @@ namespace ParkerSmart.Controllers
 		{
 			Title = nameof(Work);
 
-			ControllerUtility.SetTwitterCard(ViewBag);
+			SetOpenGraphMeta();
 
 			return View();
 		}
 
 		//----==== PRIVATE ====--------------------------------------------------------------------
+
+		private void SetOpenGraphMeta()
+		{
+			ControllerUtility.SetTwitterCard(ViewBag, "summary_large_image");
+		}
 
 		private void SetVersion()
 		{

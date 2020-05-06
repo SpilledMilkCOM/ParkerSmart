@@ -52,6 +52,7 @@ namespace ParkerSmart.Utilities
 
 				viewBag.TwitterImage = imageUrl;
 				viewBag.TwitterImageAlt = imageUrlAlt ?? "May contain awesome. A preview of Parker Smart's resumé site.";
+				viewBag.OpenGraphImage = imageUrl.Replace(".png", "OG.png");
 				viewBag.OpenGraphUrl = Constants.WEBSITE_URL;
 				viewBag.OpenGraphSiteName = Constants.APPLICATION_NAME;
 			}
