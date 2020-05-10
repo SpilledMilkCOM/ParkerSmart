@@ -19,7 +19,7 @@ Oh well, I'm not paying for their VPN service especially when I only have FREE s
   * The [commit](https://github.com/SpilledMilkCOM/ParkerSmart/commit/b3a1ff08181d6dcb044fe1440812f99c8cc60512)
     that has all the conversions.
   * Using the [**New Order**](https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp) versus push/pull in Bootstrap 3
-* Here are the image requirements specific to the LinkedIn sharing module:
+* Here are the image requirements specific to the **LinkedIn** sharing module:
   * Max file size: 5 MB
   * Minimum image dimensions: 1200 (w) x 627 (h) pixels
   * Recommended ratio: 1.91:1
