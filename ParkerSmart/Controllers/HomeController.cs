@@ -36,6 +36,15 @@ namespace ParkerSmart.Controllers
 			return View();
 		}
 
+		public ActionResult P5()
+		{
+			Title = nameof(P5);
+
+			SetOpenGraphMeta();
+
+			return View();
+		}
+
 		public ActionResult Play()
 		{
 			Title = nameof(Play);
