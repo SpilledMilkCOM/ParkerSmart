@@ -31,4 +31,6 @@ Oh well, I'm not paying for their VPN service especially when I only have FREE s
 * Twitter - https://developer.twitter.com/en
 * Emoji - https://www.w3schools.com/charsets/ref_emoji.asp
 * `linear-gradient` - https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
+* Processing (p5.js) - https://p5js.org/
+* Device Orientation - https://developers.google.com/web/fundamentals/native-hardware/device-orientation/
 * [Making Your Website Shareable on LinkedIn](https://www.linkedin.com/help/linkedin/answer/46687/making-your-website-shareable-on-linkedin?lang=en)

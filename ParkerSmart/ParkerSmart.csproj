@@ -205,6 +205,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\sketchMobile.js" />
     <Content Include="Scripts\sketch.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -227,6 +228,7 @@
     <Content Include="Scripts\jquery-3.5.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.5.0.min.map" />
     <Content Include="Views\Home\P5.cshtml" />
+    <Content Include="Views\Home\P5Mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
