@@ -34,25 +34,28 @@ function draw() {
 	//normalMaterial();         // Typically used for debugging.
 
 	// Rotate the reference
+	// No mouse on mobile! (what if there is a stylus?)
 
-	if (mouseIsPressed) {
-		if (mouseButton == LEFT) {
-			angleX += -movedY * 0.01;
-			angleY += movedX * 0.01;
+	//if (mouseIsPressed) {
+	//	if (mouseButton == LEFT) {
+	//		angleX += -movedY * 0.01;
+	//		angleY += movedX * 0.01;
 
-			rotateX(angleX);
-			rotateY(angleY);
-		} else if (mouseButton == RIGHT) {
-			angleX += -movedY * 0.01;
-			angleZ += movedX * 0.01;
+	//		rotateX(angleX);
+	//		rotateY(angleY);
+	//	} else if (mouseButton == RIGHT) {
+	//		angleX += -movedY * 0.01;
+	//		angleZ += movedX * 0.01;
 
-			rotateX(angleX);
-			rotateZ(angleZ);
-		}
+	//		rotateX(angleX);
+	//		rotateZ(angleZ);
+	//	}
 
-		frameCounter = angleX / frameScale;
-	}
-	else if (touches.length > 0) {
+	//	frameCounter = angleX / frameScale;
+	//}
+	//else
+
+	if (touches.length > 0) {
 		console.log("touches");
 		console.log(touches[0]);
 
