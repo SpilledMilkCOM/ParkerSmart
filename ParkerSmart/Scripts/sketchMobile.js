@@ -17,10 +17,16 @@ let lastTouch = null;
 let marginWidth = 0;
 let marginHeight = 75;
 
+let shakenNotStirred = false;
+
 function setup() {
 	createCanvas(windowWidth - marginWidth, windowHeight - marginHeight, WEBGL);
 
 	lastTouch = createVector(-1, -1);
+}
+
+function deviceShaken() {
+	shakenNotStirred = !shakenNotStirred;
 }
 
 function draw() {
@@ -56,8 +62,8 @@ function draw() {
 	//else
 
 	if (touches.length > 0) {
-		console.log("touches");
-		console.log(touches[0]);
+		//console.log("touches");
+		//console.log(touches[0]);
 
 		if (lastTouch.x >= 0 && lastTouch.y >= 0) {
 			angleX += -(touches[0].y - lastTouch.y) * 0.01;
@@ -70,7 +76,7 @@ function draw() {
 		lastTouch.x = touches[0].x;
 		lastTouch.y = touches[0].y;
 	}
-	else {
+	else if (shakenNotStirred) {
 		frameCounter++;
 
 		angleX = frameCounter * frameScale;
@@ -86,18 +92,28 @@ function draw() {
 }
 
 function touchEnded() {
+	console.log("touchEnded()");
+
 	lastTouch.x = -1;
 	lastTouch.y = -1;
 }
 
 function touchMoved() {
+	console.log("touchMoved()");
+
 	if (touches.length > 0) {
 		lastTouch.x = touches[0].x;
 		lastTouch.y = touches[0].y;
 	}
+
+	draw();
 }
 
 function touchStarted() {
+	console.log("touchStarted()");
+
+	shakenNotStirred = !shakenNotStirred;
+
 	if (touches.length > 0) {
 		lastTouch.x = touches[0].x;
 		lastTouch.y = touches[0].y;
