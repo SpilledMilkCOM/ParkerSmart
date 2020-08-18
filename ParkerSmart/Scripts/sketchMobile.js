@@ -18,7 +18,7 @@ let lastTouch = null;
 let marginWidth = 0;
 let marginHeight = 75;
 
-let shakenNotStirred = false;
+let shakenNotStirred = true;
 
 function setup() {
 	createCanvas(windowWidth - marginWidth, windowHeight - marginHeight, WEBGL);
@@ -28,7 +28,7 @@ function setup() {
 }
 
 function deviceShaken() {
-	shakenNotStirred = !shakenNotStirred;
+	//shakenNotStirred = !shakenNotStirred;
 
 	lastSwipe.x = 10;
 	lastSwipe.y = 10;
@@ -129,7 +129,7 @@ function touchMoved() {
 }
 
 function touchStarted() {
-	shakenNotStirred = !shakenNotStirred;
+	//shakenNotStirred = !shakenNotStirred;
 
 	if (!shakenNotStirred) {
 		lastSwipe.x = 0;
