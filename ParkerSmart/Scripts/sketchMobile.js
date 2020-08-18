@@ -46,40 +46,6 @@ function draw() {
 
 	// Rotate the reference
 	// No mouse on mobile! (what if there is a stylus?)
-
-	//if (mouseIsPressed) {
-	//	if (mouseButton == LEFT) {
-	//		angleX += -movedY * 0.01;
-	//		angleY += movedX * 0.01;
-
-	//		rotateX(angleX);
-	//		rotateY(angleY);
-	//	} else if (mouseButton == RIGHT) {
-	//		angleX += -movedY * 0.01;
-	//		angleZ += movedX * 0.01;
-
-	//		rotateX(angleX);
-	//		rotateZ(angleZ);
-	//	}
-
-	//	frameCounter = angleX / frameScale;
-	//}
-	//else
-
-	//if (touches.length > 0) {
-	//	if (lastTouch.x >= 0 && lastTouch.y >= 0) {
-	//		angleX += -(touches[0].y - lastTouch.y) * 0.01;
-	//		angleY += (touches[0].x - lastTouch.x) * 0.01;
-	//	}
-
-	//	rotateX(angleX);
-	//	rotateY(angleY);
-
-	//	lastTouch.x = touches[0].x;
-	//	lastTouch.y = touches[0].y;
-	//}
-	//else
-
 	// If "swiped" (touched) then rotate with a decaying angle.
 
 	if (shakenNotStirred) {
@@ -122,6 +88,18 @@ function draw() {
 			}
 		}
 
+		if (Math.abs(lastSwipe.x) < 0.0001) {
+			lastSwipe.x = 0;
+		}
+
+		if (Math.abs(lastSwipe.y) < 0.0001) {
+			lastSwipe.y = 0;
+		}
+
+		//if (lastSwipe.x == 0 && lastSwipe.y == 0) {
+		//	shakenNotStirred = false;
+		//}
+
 		//console.log("lastSwipe: " + lastSwipe.x + ", " + lastSwipe.y);
 	}
 
@@ -153,7 +131,11 @@ function touchMoved() {
 function touchStarted() {
 	shakenNotStirred = !shakenNotStirred;
 
-	if (touches.length > 0) {
+	if (!shakenNotStirred) {
+		lastSwipe.x = 0;
+		lastSwipe.y = 0;
+	}
+	else if (touches.length > 0) {
 		lastTouch.x = touches[0].x;
 		lastTouch.y = touches[0].y;
 	}
