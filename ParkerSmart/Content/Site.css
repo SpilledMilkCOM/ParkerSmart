@@ -6,6 +6,13 @@
 	white-space: normal;
 }
 
+/* Disable selection for "touch" */
+canvas {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,

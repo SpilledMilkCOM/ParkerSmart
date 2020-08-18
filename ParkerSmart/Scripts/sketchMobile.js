@@ -7,11 +7,12 @@ let angleZ = 0;
 let canvasSide = 500;
 
 let boxSide = canvasSide / 8;
-let frameCounter = 0.0;
+
 let frameScale = 0.01;
 
 // Only support one touch for now.
 
+let lastSwipe = null;
 let lastTouch = null;
 
 let marginWidth = 0;
@@ -22,11 +23,15 @@ let shakenNotStirred = false;
 function setup() {
 	createCanvas(windowWidth - marginWidth, windowHeight - marginHeight, WEBGL);
 
+	lastSwipe = createVector(0, 0);
 	lastTouch = createVector(-1, -1);
 }
 
 function deviceShaken() {
 	shakenNotStirred = !shakenNotStirred;
+
+	lastSwipe.x = 10;
+	lastSwipe.y = 10;
 }
 
 function draw() {
@@ -61,29 +66,63 @@ function draw() {
 	//}
 	//else
 
-	if (touches.length > 0) {
-		//console.log("touches");
-		//console.log(touches[0]);
+	//if (touches.length > 0) {
+	//	if (lastTouch.x >= 0 && lastTouch.y >= 0) {
+	//		angleX += -(touches[0].y - lastTouch.y) * 0.01;
+	//		angleY += (touches[0].x - lastTouch.x) * 0.01;
+	//	}
 
-		if (lastTouch.x >= 0 && lastTouch.y >= 0) {
-			angleX += -(touches[0].y - lastTouch.y) * 0.01;
-			angleY += (touches[0].x - lastTouch.x) * 0.01;
+	//	rotateX(angleX);
+	//	rotateY(angleY);
+
+	//	lastTouch.x = touches[0].x;
+	//	lastTouch.y = touches[0].y;
+	//}
+	//else
+
+	// If "swiped" (touched) then rotate with a decaying angle.
+
+	if (shakenNotStirred) {
+		angleX += lastSwipe.y / 180 * PI;
+		angleY += lastSwipe.x / 180 * PI;
+
+		rotateX(angleX);
+		rotateY(angleY);
+
+		if (lastSwipe.x > 0) {
+
+			if (lastSwipe.x < 0.01) {
+				lastSwipe.x /= 2;
+			} else {
+				lastSwipe.x -= 0.01;
+			}
+		}
+		else {
+
+			if (lastSwipe.x > -0.01) {
+				lastSwipe.x /= 2;
+			} else {
+				lastSwipe.x += 0.01;
+			}
 		}
 
-		rotateX(angleX);
-		rotateY(angleY);
+		if (lastSwipe.y > 0) {
+			if (lastSwipe.y < 0.01) {
+				lastSwipe.y /= 2;
+			} else {
+				lastSwipe.y -= 0.01;
+			}
+		}
+		else {
 
-		lastTouch.x = touches[0].x;
-		lastTouch.y = touches[0].y;
-	}
-	else if (shakenNotStirred) {
-		frameCounter++;
+			if (lastSwipe.y > -0.01) {
+				lastSwipe.y /= 2;
+			} else {
+				lastSwipe.y += 0.01;
+			}
+		}
 
-		angleX = frameCounter * frameScale;
-		angleY = angleX * 0.25;
-
-		rotateX(angleX);
-		rotateY(angleY);
+		//console.log("lastSwipe: " + lastSwipe.x + ", " + lastSwipe.y);
 	}
 
 	//noStroke();      // Get ride of the edges
@@ -92,26 +131,26 @@ function draw() {
 }
 
 function touchEnded() {
-	console.log("touchEnded()");
-
-	lastTouch.x = -1;
-	lastTouch.y = -1;
+	//lastTouch.x = -1;
+	//lastTouch.y = -1;
 }
 
 function touchMoved() {
-	console.log("touchMoved()");
-
 	if (touches.length > 0) {
+
+		// Establish initial rotational velocity.
+
+		lastSwipe.x = touches[0].x - lastTouch.x;
+		lastSwipe.y = touches[0].y - lastTouch.y;
+
 		lastTouch.x = touches[0].x;
 		lastTouch.y = touches[0].y;
-	}
 
-	draw();
+		//console.log("lastSwipe: " + lastSwipe.x + ", " + lastSwipe.y);
+	}
 }
 
 function touchStarted() {
-	console.log("touchStarted()");
-
 	shakenNotStirred = !shakenNotStirred;
 
 	if (touches.length > 0) {
