@@ -53,8 +53,8 @@ function draw() {
 		frameCounter = angleX / frameScale;
 	}
 	else if (touches.length > 0) {
-		console.log("touches");
-		console.log(touches[0]);
+		//console.log("touches");
+		//console.log(touches[0]);
 
 		if (lastTouch.x >= 0 && lastTouch.y >= 0) {
 			angleX += -(touches[0].y - lastTouch.y) * 0.01;
