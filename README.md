@@ -23,6 +23,9 @@ Oh well, I'm not paying for their VPN service especially when I only have FREE s
   * Max file size: 5 MB
   * Minimum image dimensions: 1200 (w) x 627 (h) pixels
   * Recommended ratio: 1.91:1
+* Automatically redirect to the HTTPS site if given the HTTP prefix.
+  * Adjust the web.Release.config and add transforms to add the rules found [here](https://www.godaddy.com/help/redirect-http-to-https-automatically-8828).
+  * Used the **PLESK** option in the list on the page above.
 
 ### References
 
