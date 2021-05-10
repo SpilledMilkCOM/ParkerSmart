@@ -140,6 +140,7 @@
     <Content Include="Images\favicon.png" />
     <Content Include="Images\GitHub-Mark-32px.png" />
     <Content Include="Images\GitHub-Mark-50x50.png" />
+    <Content Include="Images\HexagonPPM-Logo.png" />
     <Content Include="Images\IdiotDriver.png" />
     <Content Include="Images\Instagram-Logo.png" />
     <Content Include="Images\LinkedIn_logo_initials-66x66.png" />
@@ -148,7 +149,6 @@
     <Content Include="Images\Milk Spill 3.png" />
     <Content Include="Images\mixer-logo.png" />
     <Content Include="Images\Moovee Picker Cow128x128.png" />
-    <Content Include="Images\NCM-Logo-Vert.png" />
     <Content Include="Images\p5js.svg" />
     <Content Include="Images\pdf-logo-50x50.png" />
     <Content Include="Images\PDS Logo 64x64 alpha.png" />
