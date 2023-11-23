@@ -1,10 +1,10 @@
-# [ParkerSmart.com](http://ParkerSmart.com)
-The personal website of Parker Smart.  Lists web presence and dev achievements.
+﻿# <img alt="Parker Smart Logo" src="https://github.com/SpilledMilkCOM/SpilledMilkCOM/blob/master/images/PDS.png?raw=true" width="30px" /> [ParkerSmart.com](http://ParkerSmart.com)
+The personal website of Parker Smart.  Lists web presence, work, dev, and game achievements.
 
 GoDaddy does NOT support .Net Core on their PLESK servers so I had to revert back to .Net MVC.
 Oh well, I'm not paying for their VPN service especially when I only have FREE sites.
 
-### A Few Things Learned When Developing This Site
+## 🏫 A Few Things Learned When Developing This Site
 
 * [Bootstrap](https://getbootstrap.com/2.3.2/) 3 (version 2.3.2 and up)
   * Understanding columns and nested columns
@@ -29,7 +29,7 @@ Oh well, I'm not paying for their VPN service especially when I only have FREE s
   * Adjust the web.Release.config and add transforms to add the rules found [here](https://www.godaddy.com/help/redirect-http-to-https-automatically-8828).
   * Used the **PLESK** option in the list on the page above.
 
-### References
+## 📚 References
 
 * Bootstrap 4 Icons - https://useiconic.com/
 * Bootstrap 4 Grids - https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp
