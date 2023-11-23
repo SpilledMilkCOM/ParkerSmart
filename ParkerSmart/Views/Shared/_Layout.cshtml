@@ -5,166 +5,167 @@
 
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>@Constants.APPLICATION_NAME.@ViewBag.Title.ToLower()</title>
+    <title>@Constants.APPLICATION_NAME.@ViewBag.Title.ToLower()</title>
 
-	@if (ViewBag.TwitterCard != null)
-	{
-		<meta name="twitter:card" content="@ViewBag.TwitterCard" />
-		<meta name="twitter:site" content="@ViewBag.TwitterId" />
-		<meta name="twitter:creator" content="@ViewBag.TwitterCreatorId" />
-		<meta name="twitter:title" content="@ViewBag.TwitterTitle" />
-		<meta name="twitter:description" content="@ViewBag.TwitterDescription" />
-		<meta name="twitter:image" content="@ViewBag.TwitterImage" />
-		<meta name="twitter:image:alt" content="@ViewBag.TwitterImageAlt" />
+    @if (ViewBag.TwitterCard != null) {
+        <meta name="twitter:card" content="@ViewBag.TwitterCard" />
+        <meta name="twitter:site" content="@ViewBag.TwitterId" />
+        <meta name="twitter:creator" content="@ViewBag.TwitterCreatorId" />
+        <meta name="twitter:title" content="@ViewBag.TwitterTitle" />
+        <meta name="twitter:description" content="@ViewBag.TwitterDescription" />
+        <meta name="twitter:image" content="@ViewBag.TwitterImage" />
+        <meta name="twitter:image:alt" content="@ViewBag.TwitterImageAlt" />
 
-		<meta property="og:title" content="@ViewBag.TwitterTitle" />
-		<meta property="og:description" content="@ViewBag.TwitterDescription" />
-		<meta property="og:image" content="@ViewBag.OpenGraphImage" />
-		<meta property="og:image:alt" content="@ViewBag.TwitterImageAlt" />
-		@*
-				Haven't really needed these.
+        <meta property="og:title" content="@ViewBag.TwitterTitle" />
+        <meta property="og:description" content="@ViewBag.TwitterDescription" />
+        <meta property="og:image" content="@ViewBag.OpenGraphImage" />
+        <meta property="og:image:alt" content="@ViewBag.TwitterImageAlt" />
+        @*
+                Haven't really needed these.
 
-			<meta property="og:image:width" content="1024">
-			<meta property="og:image:height" content="1024">
-		*@
-		<meta property="og:site_name" content="@ViewBag.OpenGraphSiteName" />
-		<meta property="og:url" content="@ViewBag.OpenGraphUrl">
-	}
+            <meta property="og:image:width" content="1024">
+            <meta property="og:image:height" content="1024">
+        *@
+        <meta property="og:site_name" content="@ViewBag.OpenGraphSiteName" />
+        <meta property="og:url" content="@ViewBag.OpenGraphUrl">
+    }
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-	@*<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>*@
 
-	@Styles.Render("~/Content/css")
-	@Styles.Render("~/Content/animate")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/animate")
 
-	<link rel="icon" type="image/png" href="@Constants.WEBSITE_URL/images/favicon.png">
+    <link rel="icon" type="image/png" href="@Constants.WEBSITE_URL/images/favicon.png">
 
-	@* favicon is 64x64 *@
-	<link rel="apple-touch-icon" href="@Constants.WEBSITE_URL/images/favicon.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="@Constants.WEBSITE_URL/images/favicon.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="@Constants.WEBSITE_URL/images/apple-touch-icon-120x120-precomposed.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="@Constants.WEBSITE_URL/images/apple-touch-icon-152x152-precomposed.png">
+    @* favicon is 64x64 *@
+    <link rel="apple-touch-icon" href="@Constants.WEBSITE_URL/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="@Constants.WEBSITE_URL/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="@Constants.WEBSITE_URL/images/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="@Constants.WEBSITE_URL/images/apple-touch-icon-152x152-precomposed.png">
 </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark nav-settings cbp-af-header">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark nav-settings cbp-af-header">
 
-		@*Do NOT use @Html.Action() or you WILL get a "stack overflow" error*@
+        @*Do NOT use @Html.Action() or you WILL get a "stack overflow" error*@
 
-		<a class="navbar-brand" href="~/Home">
-			<img src="~/Images/PDS Logo 64x64 alpha.png" style="height: 2em;" />
-		</a>
+        <a class="navbar-brand" href="~/Home">
+            <img src="~/Images/PDS Logo 64x64 alpha.png" style="height: 2em;" />
+        </a>
 
-		@*
-			For WHATEVER reason the JS was not running for "collapse"
-			When using this method I don't believe that I need any of the other data attributes.
-		*@
+        @*
+            For WHATEVER reason the JS was not running for "collapse"
+            When using this method I don't believe that I need any of the other data attributes.
+        *@
 
-		<button class="navbar-toggler" type="button" onclick="$('.collapse').collapse()"
-				data-toggle="collapse" data-target="#mainNavBar"
-				aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+        <button class="navbar-toggler" type="button" onclick="$('.collapse').collapse()"
+                data-toggle="collapse" data-target="#mainNavBar"
+                aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<div class="collapse navbar-collapse" id="mainNavBar">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					@Html.ActionLink("Home", "Index", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Home" ? " active" : string.Empty) })
-				</li>
-				<li class="nav-item">
-					@Html.ActionLink("Work", "Work", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Work" ? " active" : string.Empty) })
-				</li>
-				<li class="nav-item">
-					@Html.ActionLink("Play", "Play", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Play" ? " active" : string.Empty) })
-				</li>
-				<li class="nav-item">
-					@Html.ActionLink("About", "About", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "About" ? " active" : string.Empty) })
-				</li>
-				<li class="nav-item">
-					@Html.ActionLink("Contact", "Contact", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Contact" ? " active" : string.Empty) })
-				</li>
-			</ul>
-		</div>
-	</nav>
+        <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    @Html.ActionLink("Home", "Index", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Home" ? " active" : string.Empty) })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Work", "Work", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Work" ? " active" : string.Empty) })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Play", "Play", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Play" ? " active" : string.Empty) })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("About", "About", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "About" ? " active" : string.Empty) })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Contact", "Contact", "Home", new { @class = string.Format("nav-link{0}", ViewBag.Title == "Contact" ? " active" : string.Empty) })
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-	<main role="main">
-		@RenderBody()
-	</main>
+    <main role="main">
+        @RenderBody()
+    </main>
 
-	@*
-		Remember "Mobile First"
-		START with the mobile layout
-		THEN change as you grow to larger devices.
+    @*
+        Remember "Mobile First"
+        START with the mobile layout
+        THEN change as you grow to larger devices.
 
-		.col- (extra small devices - screen width less than 576px)
-		.col-sm- (small devices - screen width equal to or greater than 576px)
-		.col-md- (medium devices - screen width equal to or greater than 768px)
-		.col-lg- (large devices - screen width equal to or greater than 992px)
-		.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+        .col- (extra small devices - screen width less than 576px)
+        .col-sm- (small devices - screen width equal to or greater than 576px)
+        .col-md- (medium devices - screen width equal to or greater than 768px)
+        .col-lg- (large devices - screen width equal to or greater than 992px)
+        .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
 
-		On Mobile:
+        On Mobile:
 
-		|Copyright  |Version   |
-		|Follow          |Tweet|
+        |Copyright  |Version   |
+        |Follow          |Tweet|
 
-		Small & Medium:
+        Small & Medium:
 
-		|Copyright  |Version   |Tweet|
-		|Follow                      |
+        |Copyright  |Version   |Tweet|
+        |Follow                      |
 
-		Large & XL:
+        Large & XL:
 
-		|Copyright  |Version   |Follow      |Tweet|
+        |Copyright  |Version   |Follow      |Tweet|
 
-		At the small threshold the order of the Tweet button is moved next to the version and the Follow button is moved last.
-		At the Large threshold the order is put back.
-		The widths are adjusted accordingly so there is no overlap.
+        At the small threshold the order of the Tweet button is moved next to the version and the Follow button is moved last.
+        At the Large threshold the order is put back.
+        The widths are adjusted accordingly so there is no overlap.
 
-		When you read the column classes, start at the left and the chunks will add up to 12.
-		Then move to the right encountering the size thresholds which will adjust the widths.
-		I put thresholds in their sizing order xs -> sm -> md -> lg -> xl
-	*@
+        When you read the column classes, start at the left and the chunks will add up to 12.
+        Then move to the right encountering the size thresholds which will adjust the widths.
+        I put thresholds in their sizing order xs -> sm -> md -> lg -> xl
+    *@
 
-	<footer class="container" style="margin-bottom: 1em;">
-		<div class="row">
-			<div class="col-8 col-sm-6 col-md-4">
-				&copy; @ViewUtility.CopyrightDates() - @Html.ActionLink("Parker Smart", "Contact", "Home")
-			</div>
+    <footer class="container" style="margin-bottom: 1em;">
+        <div class="row">
+            <div class="col-8 col-sm-6 col-md-4">
+                &copy; @ViewUtility.CopyrightDates() - @Html.ActionLink("Parker Smart", "Contact", "Home")
+            </div>
 
-			<div class="col-4 col-sm-4 col-md-6 col-lg-3">
-				v.&nbsp;<a href="https://github.com/SpilledMilkCOM/ParkerSmart/commits/master" target="_blank">@ViewUtility.Version()</a>
-			</div>
+            <div class="col-4 col-sm-4 col-md-6 col-lg-3">
+                v.&nbsp;<a href="https://github.com/SpilledMilkCOM/ParkerSmart/commits/master" target="_blank">@ViewUtility.Version()</a>
+            </div>
 
-			<div class="col-9 order-sm-12 col-lg-4 order-lg-3">
-				<a class="twitter-follow-button"
-				   href="https://twitter.com/SpilledMilkCOM"
-				   data-show-count="true">
-					Follow @@SpilledMilkCOM
-				</a>
-			</div>
+            <div class="col-9 order-sm-12 col-lg-4 order-lg-3">
+                <a class="twitter-follow-button"
+                   href="https://twitter.com/SpilledMilkCOM"
+                   data-show-count="true">
+                    Follow @@SpilledMilkCOM
+                </a>
+            </div>
 
-			<div class="col-3 col-sm-2 order-sm-3 col-lg-1 order-lg-12">
-				<a class="twitter-share-button"
-				   href="https://twitter.com/intent/tweet">
-					Tweet
-				</a>
-			</div>
-		</div>
-	</footer>
+            <div class="col-3 col-sm-2 order-sm-3 col-lg-1 order-lg-12">
+                <a class="twitter-share-button"
+                   href="https://twitter.com/intent/tweet">
+                    Tweet
+                </a>
+            </div>
+        </div>
+    </footer>
 
-	@Scripts.Render("~/bundles/jquery")
-	@Scripts.Render("~/bundles/bootstrap")
-	@Scripts.Render("~/bundles/classie")
-	@Scripts.Render("~/bundles/cbpAnimatedHeader")
-	@Scripts.Render("~/bundles/modernizr")
+    @* TODO: Fix footer not docking on the bottom *@
 
-	@*Making sure that the script bundle is brought into EACH page.*@
-	@* Custom script has to go last to initialize Facebook, Twitter, etc.  *@
-	@Scripts.Render("~/bundles/parkersmart")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/classie")
+    @Scripts.Render("~/bundles/cbpAnimatedHeader")
+    @Scripts.Render("~/bundles/modernizr")
 
-	@RenderSection("scripts", required: false)
+    @* Making sure that the script bundle is brought into EACH page.       *@
+    @* Custom script has to go last to initialize Facebook, Twitter, etc.  *@
+    @Scripts.Render("~/bundles/parkersmart")
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>
